@@ -1,0 +1,63 @@
+import PostBody from '../../components/PostBody';
+import PostContainer from '../../components/PostContainer';
+import PostHeader from '../../components/PostHeader';
+import PostNavigation from '../../components/PostNavigation';
+import getPosts from '../../lib/getPosts';
+import { Metadata } from 'next';
+
+export async function generateStaticParams() {
+  const posts = await getPosts();
+  return posts.map((post: any) => ({ slug: post.slug }));
+}
+
+export const generateMetadata = async ({
+  params,
+}: {
+  params: {
+    postName: string;
+  };
+}): Promise<Metadata> => {
+  const post: any = (await getPosts()).find(
+    (post: any) => post?.slug === params.postName
+  );
+
+  return {
+    title: post?.title,
+    description: post?.description,
+  };
+};
+
+async function getData({ slug }: { slug: string }) {
+  const posts = await getPosts();
+  const postIndex = posts.findIndex((post: any) => post?.slug === slug);
+  const post = posts[postIndex];
+
+  return {
+    ...post,
+  };
+}
+
+export default async function PostLayout({
+  children,
+  params,
+}: {
+  children: JSX.Element;
+  params: {
+    postName: string;
+  };
+}) {
+  const { title, date }: any = await getData({
+    slug: params.postName,
+  });
+
+  return (
+    <PostContainer>
+      <PostNavigation />
+      <PostHeader>
+        <h1>{title}</h1>
+        <div>{date}</div>
+      </PostHeader>
+      <PostBody>{children}</PostBody>
+    </PostContainer>
+  );
+}
