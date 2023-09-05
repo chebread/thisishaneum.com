@@ -4,7 +4,7 @@ const sitemap = async () => {
   const posts = await getPosts();
   const blogs = posts.map((post: any) => ({
     url: `https://thisishaneum.com/${post.slug}`,
-    lastModified: new Date(post.lastModified).toISOString().split('T')[0],
+    lastModified: post.date,
   }));
 
   const routes = [''].map((route: any) => ({
