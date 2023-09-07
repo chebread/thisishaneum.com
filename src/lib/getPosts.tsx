@@ -4,7 +4,7 @@ import fs from 'fs/promises';
 import { cache } from 'react';
 
 const getPosts = cache(async () => {
-  const posts = await fs.readdir('./posts/');
+  const posts = await fs.readdir(path.join(process.cwd(), './posts'));
 
   const postsWithMetadata = await Promise.all(
     posts
