@@ -1,0 +1,38 @@
+---
+title: 내가 React를 사용하지 않는 이유
+description: 저는 원래 Vanilla JavaScript를 사이드 프로젝트에서 주로 사용하다가 현재는 Vue.js로 스택을 변경하게 되었습니다. 변경하는 과정에서 왜 React로 변경하지 않게 되었는지에 대해 이야기 해보겠습니다.
+date: 2022-09-04
+published: false
+---
+
+저는 원래 Vanilla JavaScript를 사이드 프로젝트에서 주로 사용하다가 현재는 Vue.js로 스택을 변경하게 되었습니다. 변경하는 과정에서 왜 React로 변경하지 않게 되었는지에 대해 이야기 해보겠습니다.
+
+## 왜 Vue.js를 선택하게 됬는가?
+
+저는 프론트엔드 개발을 React로 시작한 사람입니다. 처음에는 JQeury로 Introduce 페이지를 만들어 보기도 하였지만, 저는 JavaScript를 거의 모른체로 React로 많은 것을 개발하기 시작하였습니다. 그치만 저는 기본이 부족하 생각하여 Vanilla JavaScript로 주 스택을 변경하였고, 약 5개월 이상을 Vanilla JavaScript로 사이드 프로젝트를 개발하기 시작하였습니다. 그치만 Vanilla JavaScript의 고질적인 단점인 능률성이 떨어지는 단점이 있었기에 꽤 프레임워크/라이브러리 적인 것을 사용해보다가 Vue.js가 꽤나 프레임워크/라이브러리 적이라 사용을 지향하게 되었습니다.
+
+처음에는 Vue.js와 Svelte가 매우 고민되었습니다만, Svelte는 아직은 부족한 프레임워크라고 판단되어 사용을 지양하게 되었습니다.
+
+## 왜 React는 비 프레임워크/라이브러리 적이라고 생각하였는가?
+
+저는 React는 라이브러리로서 Vanilla JavaScript의 특성을 너무 많이 따르고 있다고 생각합니다. 저는 라이브러리가 Vanill JavaScript의 고질적인 특성을 따르되, 사용자에게 편한 기능은 보완하여 제공해야 한다고 생각합니다. 이 점에서 Vue.js는 매우 휼륭했습니다. (부족한 부분도 있지만, 저는 쓸만한 프레임워크라고 생각합니다)
+
+## Vue.js를 사용하는 주된 이유는?
+
+저는 Vue.js를 `Options API` 를 사용할때는 매우 싫은 프레임워크 였습니다. 너무 장황했기 때문입니다. 그치만 Vue 3가 나온 이상, 저는 Vue.js가 너무 이쁘게 보이기 시작했습니다. 바로 `Composition API` 때문입니다. `Composition API` 는 React Hooks의 단점을 보완한 Vue.js를 새롭게 구성하는 방식이라고 생각하시면 될 것 같습니다. 저는 매우 `Composition API` 를 사랑하고 거의 `Options API` 는 사용하지 않습니다. 저의 기준으로 매우 못생겼고, 장황하며, 매우 능률적이지 않습니다. (제가 `Options API` 를 싫어하는 또 다른 매우 개인적인 이유는 제가 매우 싫어하는 `new` 와 `return` , ` fucntion` 과 `()` 의 모임이기 때문입니다. 저는 Arrow function, Functional Programming을 매우 지향합니다!)
+
+## Vue.js의 매력은?
+
+저는 매우 간결하고 편한 SFC(`*.vue`)라고 생각합니다. `.vue` 파일은 매우 사용하기 편합니다. 하나의 파일에 프론트엔드의 3요소가 다 담겨저 있습니다. 이는 정말 좋은 프레임워크의 특성이자 Vue.js의 매력이라고 생각합니다.
+
+또한, Composition API라고 생각합니다. React Hooks를 사용하면서 별로 였던 부분들이 Vue의 Composition API를 사용하면 매우 간결하게 해결되는 것을 확인할 수 있습니다. React는 Vanilla JavaScript의 확장판이고, Vue는 JavaScript를 매우 쉽게 다룰 수 있도록 만든 하나의 컴파일러 같습니다. 이렇게 Vue.js는 매우 편한 구문으로 간결하게 사용할 수 있도록 해줍니다!
+
+## Vue.js를 사용을 추천하지 않는 분은?
+
+저는 JavaScript의 기본적인 개념을 잘 모르시는 분은 Vue.js를 추천하지 않습니다. Vue.js에서 사용하는 구문들은 JavaScript와 완전히 다르고, 만약 JavaScript의 아무 개념도 모르는 분이 Vue.js만을 사용하다가 새로운 스택으로 변경하려고 할때 그 분은 다시 새로 JavaScript를 배워야만 할 것 입니다. JavaScirpt와 동일한 부분은 그저 `methods` 나 `computed` , ... 에서 로직을 구성하는 부분만 동일합니다. 그 외의 것은 거의 모든 것이 다릅니다.
+
+이 이유는 프레임워크이기 때문입니다. 라이브러리인 React는 모든 것이 JavaScript입니다. `useState` , `useEffect` 등등 이들이 코드에서 사용하는 동작 방식은 Vanilla JavaScript에서 구성한 것과 완벽히 일치합니다. React는 그저 `JSX` 와 `render` ... 만을 담당하는 것입니다. React는 그저 라이브러리 이기에 React 코드에서 눈에 보이는 것은 전부 Vanilla JavaScript와 동일합니다.
+
+## Vue.js를 사용하지 않는다면 이유는 무엇인가?
+
+저는 만약 Vue.js를 사용하지 않는다면 이유는 크게 두가지 일 것 같습니다.첫번째는 Svelte의 완전한 변화이고, 또 한가지는 React의 간결화입니다.

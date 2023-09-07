@@ -1,13 +1,16 @@
-import PostBody from '../../components/PostBody';
-import PostContainer from '../../components/PostContainer';
-import PostHeader from '../../components/PostHeader';
-import PostNavigation from '../../components/PostNavigation';
-import getPosts from '../../lib/getPosts';
+import PostBody from '@components/PostBody';
+import PostContainer from '@components/PostContainer';
+import PostHeader from '@components/PostHeader';
+import PostNavigation from '@components/PostNavigation';
+import getPosts from '@lib/getPosts';
 import { Metadata } from 'next';
 
 export async function generateStaticParams() {
   const posts = await getPosts();
-  return posts.map((post: any) => ({ slug: post.slug }));
+
+  return posts.map((post: any) => {
+    slug: post.slug;
+  });
 }
 
 export const generateMetadata = async ({
@@ -46,17 +49,14 @@ export default async function PostLayout({
     postName: string;
   };
 }) {
-  const { title, date }: any = await getData({
+  const post: any = await getData({
     slug: params.postName,
   });
 
   return (
     <PostContainer>
       <PostNavigation />
-      <PostHeader>
-        <h1>{title}</h1>
-        <div>{date}</div>
-      </PostHeader>
+      <PostHeader title={post.title} date={post.date} />
       <PostBody>{children}</PostBody>
     </PostContainer>
   );

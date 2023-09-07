@@ -1,3 +1,1 @@
-export default function PostHeader({ children }) {
-  return <div>{children}</div>;
-}
+export { default } from './PostHeader';

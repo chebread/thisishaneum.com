@@ -1,25 +1,34 @@
 {
   "name": "thisishaneum.com",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint && prettier --write '**/*.{js,ts,tsx}' --loglevel warn"
   },
+  "license": "MIT",
   "dependencies": {
+    "@swc/plugin-styled-components": "^1.5.76",
     "@types/node": "20.5.9",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
+    "@wooorm/starry-night": "^2.1.1",
     "bright": "^0.8.4",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
+    "github-markdown-css": "^5.2.0",
     "gray-matter": "^4.0.3",
     "next": "13.4.19",
     "next-mdx-remote": "^4.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "styled-components": "^6.0.7",
+    "styled-normalize": "^8.0.7",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0"
   }
 }

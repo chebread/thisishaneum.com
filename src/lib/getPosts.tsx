@@ -6,21 +6,35 @@ import { cache } from 'react';
 const getPosts = cache(async () => {
   const posts = await fs.readdir('./posts/');
 
-  return Promise.all(
+  const postsWithMetadata = await Promise.all(
     posts
-      .filter(file => path.extname(file) === '.mdx')
+      .filter(file => path.extname(file) === '.mdx') //  || path.extname(file) === '.md'
       .map(async file => {
         const filePath = `./posts/${file}`;
         const postContent = await fs.readFile(filePath, 'utf8');
         const { data, content } = matter(postContent);
 
         if (data.published === false) {
-          return null;
+          return null; // (0): 에러 해결하기
         }
 
-        return { ...data, body: content };
+        const slug: string = file.substring(0, file.indexOf('.')); // file name is blog's slug
+
+        return {
+          ...data,
+          body: content,
+          slug: slug,
+        };
       })
   );
+
+  const filtered = postsWithMetadata
+    .filter(post => post !== null)
+    .sort((a: any, b: any) =>
+      a && b ? new Date(b.date).getTime() - new Date(a.date).getTime() : 0
+    );
+
+  return filtered;
 });
 
 export default getPosts;

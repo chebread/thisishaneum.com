@@ -2,7 +2,7 @@ import FeedContainer from '@components/FeedContainer';
 import PostsListRSC from '../components/PostsList/PostsListRSC';
 import FeedHeader from '@components/FeedHeader';
 
-const Home = () => {
+const Feed = () => {
   return (
     <FeedContainer>
       <FeedHeader />
@@ -11,4 +11,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Feed;

@@ -1,3 +1,1 @@
-export default function PostBody({ children }) {
-  return <div>{children}</div>;
-}
+export { default } from './PostBody';

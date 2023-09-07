@@ -5,20 +5,24 @@ import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
   const posts = await getPosts();
-  return posts.map((post: any) => ({ slug: post.slug }));
+
+  return posts.map((post: any) => {
+    slug: post.slug;
+  });
 }
 
 const PostPage = async ({
   params,
 }: {
   params: {
-    postName: string; // slug
+    postName: string;
   };
 }) => {
-  const post = await getPost(params.postName);
+  const post: any = await getPost(params.postName);
 
-  if (!post) return notFound();
-
+  if (!post) {
+    return notFound();
+  }
   return <MdxViewer>{post?.body}</MdxViewer>;
 };
 

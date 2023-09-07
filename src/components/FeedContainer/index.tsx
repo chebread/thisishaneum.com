@@ -1,5 +1,1 @@
-const FeedContainer = ({ children }) => {
-  return <div>{children}</div>;
-};
-
-export default FeedContainer;
+export { default } from './FeedContainert';

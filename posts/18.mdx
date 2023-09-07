@@ -1,0 +1,27 @@
+---
+title: Storage 라이브러리 추천
+description: idb-keyval, Local storage
+date: 2023-07-14
+published: false
+---
+
+## idb-keyval
+
+IndexedDB 라이브러리로 매우 사용하기 간결합니다. 정말 idb 보다 idb-keyval을 추천드립니다.
+
+## Local storage
+
+저는 기본적인 JS에 내장되어 있는 Local storage + Async로 변환하여 사용중입니다.
+
+```js
+// Local storage get 예시
+const get = (key: string) => {
+  return new Promise(resolve => {
+    resolve(JSON.parse(localStorage.getItem(key)));
+  });
+};
+
+export default get;
+```
+
+이런 방식으로 사용하게 된다면 Local storage를 비동기적으로 사용할 수 있어 매우 편리하게 사용할 수 있습니다.

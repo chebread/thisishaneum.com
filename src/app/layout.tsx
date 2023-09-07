@@ -1,4 +1,7 @@
+import StyledComponentsRegistry from '@lib/registry';
 import type { Metadata } from 'next';
+import GlobalStyles from '@styles/GlobalStyles';
+import Footer from '@components/Footer/Footer';
 
 export default function RootLayout({
   children,
@@ -6,13 +9,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko" suppressHydrationWarning>
+    <html lang="ko">
       <body suppressHydrationWarning>
-        <>
-          <div>
-            <main>{children}</main>
-          </div>
-        </>
+        <StyledComponentsRegistry>
+          <GlobalStyles />
+          {children}
+          <Footer />
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
@@ -40,7 +43,4 @@ export const metadata: Metadata = {
     title: 'Cha Haneum',
     card: 'summary_large_image',
   },
-  // icons: {
-  //   shortcut: 'https://thisishaneum.com/favicons/favicon.ico',
-  // },
 };
