@@ -1,10 +1,12 @@
-import getPost from '../../lib/getPost';
-import getPosts from '../../lib/getPosts';
-import MdxViewer from '../../components/MdxViewer';
+import getPost from '@lib/getPost';
+import getPosts from '@lib/getPosts';
+import MdxViewer from '@components/MdxViewer';
 import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
   const posts = await getPosts();
+
+  console.log(posts);
 
   return posts.map((post: any) => {
     slug: post.slug;
@@ -19,6 +21,8 @@ const PostPage = async ({
   };
 }) => {
   const post: any = await getPost(params.postName);
+
+  console.log(post);
 
   if (!post) {
     return notFound();
