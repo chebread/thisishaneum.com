@@ -2216,18 +2216,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wooorm/starry-night@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "@wooorm/starry-night@npm:2.1.1"
-  dependencies:
-    "@types/hast": ^2.0.0
-    import-meta-resolve: ^2.0.0
-    vscode-oniguruma: ^1.0.0
-    vscode-textmate: ^9.0.0
-  checksum: eed91226cfc7d28978b64faee3634ea4bc221da9fa376fdc39f82edaf8350e937c138f56495e15cbc38ab45e448d6947e7d6ab839239dcea6946a96eac5be6a3
-  languageName: node
-  linkType: hard
-
 "abbrev@npm:^1.0.0":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -4252,13 +4240,6 @@ __metadata:
     parent-module: ^1.0.0
     resolve-from: ^4.0.0
   checksum: 2cacfad06e652b1edc50be650f7ec3be08c5e5a6f6d12d035c440a42a8cc028e60a5b99ca08a77ab4d6b1346da7d971915828f33cdab730d3d42f08242d09baa
-  languageName: node
-  linkType: hard
-
-"import-meta-resolve@npm:^2.0.0":
-  version: 2.2.2
-  resolution: "import-meta-resolve@npm:2.2.2"
-  checksum: 3a5910a6f914b5f06b307d7d1c25710bc56f12e21e923d5b2180dd0d53c6c2d51e7b55df26f168b63f5670babcaca9422b7a9429e877bbb8c1997d79bd65882b
   languageName: node
   linkType: hard
 
@@ -6908,7 +6889,6 @@ __metadata:
     "@types/node": 20.5.9
     "@types/react": 18.2.21
     "@types/react-dom": 18.2.7
-    "@wooorm/starry-night": ^2.1.1
     bright: ^0.8.4
     eslint: 8.48.0
     eslint-config-next: 13.4.19
@@ -7289,20 +7269,6 @@ __metadata:
     unist-util-stringify-position: ^3.0.0
     vfile-message: ^3.0.0
   checksum: 642cce703afc186dbe7cabf698dc954c70146e853491086f5da39e1ce850676fc96b169fcf7898aa3ff245e9313aeec40da93acd1e1fcc0c146dc4f6308b4ef9
-  languageName: node
-  linkType: hard
-
-"vscode-oniguruma@npm:^1.0.0":
-  version: 1.7.0
-  resolution: "vscode-oniguruma@npm:1.7.0"
-  checksum: 53519d91d90593e6fb080260892e87d447e9b200c4964d766772b5053f5699066539d92100f77f1302c91e8fc5d9c772fbe40fe4c90f3d411a96d5a9b1e63f42
-  languageName: node
-  linkType: hard
-
-"vscode-textmate@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "vscode-textmate@npm:9.0.0"
-  checksum: 17f5e1e9ad4b56d15e29826a440054d9f50b65b25c8ba189ce36972dca003b5e68318d3703ec5f575104c4423463dff3944464c67027d9b88f91aa0e8e5f0296
   languageName: node
   linkType: hard
 
