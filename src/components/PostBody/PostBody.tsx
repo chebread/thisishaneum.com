@@ -19,4 +19,20 @@ const Container = styled.article`
     user-select: none;
     -webkit-touch-callout: none;
   }
+
+  // Set code block light / dark theme
+  [data-theme='light'] {
+    display: block;
+  }
+  [data-theme='dark'] {
+    display: none;
+  }
+  @media (prefers-color-scheme: dark) {
+    [data-theme='light'] {
+      display: none;
+    }
+    [data-theme='dark'] {
+      display: block;
+    }
+  }
 `;

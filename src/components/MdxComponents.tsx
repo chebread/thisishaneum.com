@@ -5,11 +5,8 @@ import darkCustomTheme from './darkCustomTheme.json';
 import lightCustomTheme from './lightCustomTheme.json';
 
 Code.theme = {
-  dark: darkCustomTheme,
   light: lightCustomTheme,
-  // using a different CSS selector:
-  // lightSelector: '[data-theme="light"]',
-  // lightSelector: 'html.light',
+  dark: darkCustomTheme,
 };
 
 const MdxComponents = {
@@ -29,7 +26,16 @@ const MdxComponents = {
     return <Image {...props} alt={props.alt || ''} />;
   },
   pre: ({ children, ...props }) => {
-    return <Code {...props}>{children}</Code>;
+    return (
+      <>
+        <div data-theme="dark">
+          <Code {...props}>{children}</Code>
+        </div>
+        <div data-theme="light">
+          <Code {...props}>{children}</Code>
+        </div>
+      </>
+    );
   },
 };
 
