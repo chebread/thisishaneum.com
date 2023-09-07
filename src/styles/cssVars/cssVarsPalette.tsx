@@ -1,4 +1,4 @@
-import stringToCssVar from 'lib/stringToCssVar';
+import stringToCssVar from '@lib/stringToCssVar';
 import cssVars from './cssVars';
 
 const variableKeys = [

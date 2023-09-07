@@ -11,7 +11,7 @@ const styles = css``;
 const GlobalStyles = createGlobalStyle`
   ${normalize}
   ${styles}
-  /* body {
+  body {
     ${appCssVars.all}
     ${appCssVars.mobile}
   }
@@ -19,7 +19,7 @@ const GlobalStyles = createGlobalStyle`
     body {
       ${appCssVars.desktop}
     }
-  } */
+  }
   body {
     ${appThemes.light};
   }
