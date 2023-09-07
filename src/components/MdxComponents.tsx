@@ -1,9 +1,16 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Code } from 'bright';
-import customTheme from './customTheme.json';
+import darkCustomTheme from './darkCustomTheme.json';
+import lightCustomTheme from './lightCustomTheme.json';
 
-Code.theme = customTheme;
+Code.theme = {
+  dark: darkCustomTheme,
+  light: lightCustomTheme,
+  // using a different CSS selector:
+  // lightSelector: '[data-theme="light"]',
+  // lightSelector: 'html.light',
+};
 
 const MdxComponents = {
   a: ({ children, ...props }) => {
