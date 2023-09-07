@@ -7,12 +7,11 @@ const nextConfig = {
     appDir: true,
     mdxRs: false,
     legacyBrowsers: false,
-    optimizeCss: true,
+    // optimizeCss: true,
   },
   compiler: {
     styledComponents: true,
   },
-  reactStrictMode: true,
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,
