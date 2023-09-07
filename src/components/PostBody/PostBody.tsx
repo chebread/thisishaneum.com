@@ -13,4 +13,10 @@ export default function PostBody({ children }) {
 const Container = styled.article`
   margin-top: 2rem;
   background-color: ${themedPalette.background_color};
+  .markdown-body-link {
+    // disable active effect
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-touch-callout: none;
+  }
 `;

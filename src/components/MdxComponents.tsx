@@ -8,7 +8,12 @@ Code.theme = customTheme;
 const MdxComponents = {
   a: ({ children, ...props }) => {
     return (
-      <Link {...props} href={props.href || ''} target="_self">
+      <Link
+        {...props}
+        href={props.href || ''}
+        target="_self"
+        className="markdown-body-link" // for disable active effect
+      >
         {children}
       </Link>
     );
