@@ -38,6 +38,8 @@ const LinkBtn = styled(Link)`
   user-select: none;
   -webkit-touch-callout: none;
 
+  cursor: pointer;
+
   transition-property: background-color transform;
   transition-timing-function: ease-out;
   transition-duration: 0.15s;
