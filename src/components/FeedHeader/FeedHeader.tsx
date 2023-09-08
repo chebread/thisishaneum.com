@@ -84,18 +84,6 @@ const Title = styled.h1`
   margin-top: 0.75rem;
   color: ${themedPalette.light_color};
 `;
-const Container = styled.div`
-  width: 100%;
-  height: 22.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  border-color: rgba(209, 213, 219, 0.8);
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-`;
 const Img = styled(Link)`
   height: 6.25rem;
   width: 6.25rem;
@@ -109,6 +97,23 @@ const Img = styled(Link)`
   border-width: 4px;
   border-style: solid;
   box-sizing: border-box;
+`;
+
+const Container = styled.div`
+  width: 100%;
+  height: 20rem;
+  @media (min-width: 639.9px) {
+    height: 22.5rem;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-color: rgba(209, 213, 219, 0.8);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 `;
 
 export default FeedHeader;

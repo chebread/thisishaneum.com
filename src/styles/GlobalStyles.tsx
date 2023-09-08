@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
     ${appCssVars.all}
     ${appCssVars.mobile}
   }
-  @media (min-width: 961px) {
+  @media (min-width: 639.9px) {
     body {
       ${appCssVars.desktop}
     }

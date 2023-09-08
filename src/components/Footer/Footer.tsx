@@ -21,11 +21,15 @@ const Footer = () => {
 };
 
 const Container = styled.footer`
-  padding: 5rem 0 4rem 0;
+  padding-bottom: 2rem;
+  margin-top: 4rem;
+  @media (min-width: 639.9px) {
+    padding-bottom: 4rem;
+    margin-top: 5rem;
+  }
   font-size: 14px;
   line-height: 1.25rem;
   font-family: 400;
-
   color: rgba(156, 163, 175, 8);
   @media (prefers-color-scheme: dark) {
     color: rgba(107, 114, 128, 8);
@@ -33,6 +37,7 @@ const Container = styled.footer`
 `;
 
 const Text = styled.p`
+  margin: 0;
   color: inherit;
 `;
 

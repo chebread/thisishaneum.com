@@ -79,7 +79,7 @@ const PostReadMoreLink = styled(Link)`
   }
 `;
 const PostReadMore = styled.p`
-  margin-top: 0.75rem;
+  margin: 0.75rem 0 0 0;
 `;
 const PostDescription = styled.div`
   margin-top: 0.75rem;
@@ -123,7 +123,10 @@ const PostContainer = styled.div`
   }
 `;
 const Container = styled.div`
-  padding-top: 4rem;
+  padding-top: 3rem;
+  @media (min-width: 639.9px) {
+    padding-top: 4rem;
+  }
 `;
 
 export default PostsList;
