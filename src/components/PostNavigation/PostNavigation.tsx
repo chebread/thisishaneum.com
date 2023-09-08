@@ -34,6 +34,7 @@ const RedirectBtn = styled(Link)`
 
   display: inline-flex;
   margin-bottom: 4rem;
+
   &:hover {
     /* background-color: #f5f5f5; */
     svg {
@@ -42,7 +43,6 @@ const RedirectBtn = styled(Link)`
       }
     }
   }
-
   &:active {
     transform: scale(0.86);
   }

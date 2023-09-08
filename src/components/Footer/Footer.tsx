@@ -27,6 +27,7 @@ const Container = styled.footer`
     padding-bottom: 4rem;
     margin-top: 5rem;
   }
+
   font-size: 14px;
   line-height: 1.25rem;
   font-family: 400;

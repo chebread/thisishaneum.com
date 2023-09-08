@@ -48,6 +48,7 @@ const LinkBtn = styled(Link)`
   @media (prefers-color-scheme: dark) {
     background-color: rgba(156, 163, 175, 0.1);
   }
+
   height: 2rem;
   width: 2rem;
   display: flex;
