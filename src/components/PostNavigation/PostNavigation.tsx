@@ -19,26 +19,29 @@ const Container = styled.nav``;
 
 const RedirectBtn = styled(Link)`
   cursor: pointer;
-  // disable selection
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  user-select: none;
-  // disable active effect
-  -webkit-tap-highlight-color: transparent;
-  user-select: none;
-  -webkit-touch-callout: none;
 
   display: inline-flex;
   margin-bottom: 4rem;
 
-  &:hover {
-    svg {
-      path {
-        fill: ${themedPalette.color};
+  @media (min-width: 639.9px) {
+    // desktop
+    &:hover {
+      svg {
+        path {
+          fill: ${themedPalette.color};
+        }
       }
     }
   }
   &:active {
+    @media (max-width: 639.9px) {
+      // mobile
+      svg {
+        path {
+          fill: ${themedPalette.color};
+        }
+      }
+    }
     svg {
       transform: scale(0.86);
     }

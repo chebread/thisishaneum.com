@@ -30,11 +30,6 @@ const FeedHeader = () => {
 };
 
 const LinkBtn = styled(Link)`
-  // disable active effect
-  -webkit-tap-highlight-color: transparent;
-  user-select: none;
-  -webkit-touch-callout: none;
-
   cursor: pointer;
 
   transition-property: background-color transform;

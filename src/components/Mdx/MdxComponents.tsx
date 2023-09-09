@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { Code } from 'bright';
-import darkCustomTheme from './darkCustomTheme.json';
-import lightCustomTheme from './lightCustomTheme.json';
+import darkCustomTheme from '../darkCustomTheme.json';
+import lightCustomTheme from '../lightCustomTheme.json';
+import { MdxImage } from './MdxImage';
 
 Code.theme = {
   light: lightCustomTheme,
@@ -12,19 +12,13 @@ Code.theme = {
 const MdxComponents = {
   a: ({ children, ...props }) => {
     return (
-      <Link
-        {...props}
-        href={props.href || ''}
-        target="_self"
-        className="markdown-body-link" // for disable active effect
-      >
+      <Link {...props} href={props.href || ''} target="_self">
         {children}
       </Link>
     );
   },
-  img: ({ props }) => {
-    return <Image {...props} alt={props.alt || ''} />;
-  },
+  img: MdxImage as any,
+  Image: MdxImage as any,
   pre: ({ children, ...props }) => {
     return (
       <>

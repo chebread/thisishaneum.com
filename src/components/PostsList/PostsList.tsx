@@ -53,11 +53,6 @@ const PostsList = ({ pinnedPosts, posts }) => {
 };
 
 const PostReadMoreLink = styled(Link)`
-  // disable active effect
-  -webkit-tap-highlight-color: transparent;
-  user-select: none;
-  -webkit-touch-callout: none;
-
   transition-property: color, font-size;
   transition-duration: 0.15s;
   transition-timing-function: ease-out;
@@ -99,10 +94,10 @@ const PostDate = styled.p`
 `;
 const PostLink = styled(Link)`
   cursor: pointer;
-  // disable active effect
-  -webkit-tap-highlight-color: transparent;
-  user-select: none;
-  -webkit-touch-callout: none;
+
+  transition-property: color, color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-out;
 
   color: ${themedPalette.color};
   text-decoration: none;

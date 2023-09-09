@@ -41,10 +41,6 @@ const Text = styled.p`
 
 const Redirect = styled(Link)`
   cursor: pointer;
-  // disable active effect
-  -webkit-tap-highlight-color: transparent;
-  user-select: none;
-  -webkit-touch-callout: none;
 
   transition-property: color;
   transition-duration: 0.15s;

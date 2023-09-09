@@ -35,6 +35,17 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
     background-color: ${themedPalette.background_color};
   }
+
+  // disable tab highlight
+  button,
+  textarea,
+  input,
+  select,
+  a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: none;
+  }
 `;
 
 export default GlobalStyles;
