@@ -8,7 +8,9 @@ const getPosts = cache(async () => {
 
   const postsWithMetadata = await Promise.all(
     posts
-      .filter(file => path.extname(file) === '.mdx') //  || path.extname(file) === '.md'
+      .filter(
+        file => path.extname(file) === '.md' || path.extname(file) === '.mdx'
+      )
       .map(async file => {
         const filePath = `./posts/${file}`;
         const postContent = await fs.readFile(filePath, 'utf8');

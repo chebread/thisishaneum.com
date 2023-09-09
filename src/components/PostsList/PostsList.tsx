@@ -16,7 +16,7 @@ const PostsList = ({ pinnedPosts, posts }) => {
             </PostTitle>
             <PostDate>
               <PostTime dateTime={dateToString(new Date(post.date))}>
-                {dateToString(new Date(post.date))}
+                {post.date ? dateToString(new Date(post.date)) : ''}
               </PostTime>
             </PostDate>
             <PostDescription>{post.description || ''}</PostDescription>
@@ -36,7 +36,7 @@ const PostsList = ({ pinnedPosts, posts }) => {
             </PostTitle>
             <PostDate>
               <PostTime dateTime={dateToString(new Date(post.date))}>
-                {dateToString(new Date(post.date))}
+                {post.date ? dateToString(new Date(post.date)) : ''}
               </PostTime>
             </PostDate>
             <PostDescription>{post.description || ''}</PostDescription>

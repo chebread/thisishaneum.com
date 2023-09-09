@@ -7,15 +7,19 @@ import { styled } from 'styled-components';
 export default function PostHeader({ title, date }) {
   return (
     <Container>
-      <Title>{title}</Title>
-      <Time>{dateToString(new Date(date))}</Time>
+      <PostTitle>{title}</PostTitle>
+      <PostDate>
+        <PostTime dateTime={dateToString(new Date(date))}>
+          {date ? dateToString(new Date(date)) : ''}
+        </PostTime>
+      </PostDate>
     </Container>
   );
 }
 
 const Container = styled.div``;
 
-const Title = styled.h1`
+const PostTitle = styled.h1`
   margin: 0;
   font-weight: 700;
   font-size: 2.25rem;
@@ -23,7 +27,8 @@ const Title = styled.h1`
   color: ${themedPalette.light_color};
 `;
 
-const Time = styled.div`
+const PostTime = styled.time``;
+const PostDate = styled.div`
   margin-top: 0.25rem;
   font-size: 1rem;
   font-family: 400;
