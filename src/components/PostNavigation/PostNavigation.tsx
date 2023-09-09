@@ -28,15 +28,10 @@ const RedirectBtn = styled(Link)`
   user-select: none;
   -webkit-touch-callout: none;
 
-  transition-property: transform;
-  transition-duration: 0.15s;
-  transition-timing-function: ease-out;
-
   display: inline-flex;
   margin-bottom: 4rem;
 
   &:hover {
-    /* background-color: #f5f5f5; */
     svg {
       path {
         fill: ${themedPalette.color};
@@ -44,10 +39,16 @@ const RedirectBtn = styled(Link)`
     }
   }
   &:active {
-    transform: scale(0.86);
+    svg {
+      transform: scale(0.86);
+    }
   }
 
   svg {
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+
     height: 1rem;
     width: auto;
     path {
