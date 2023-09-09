@@ -1,9 +1,16 @@
 'use client';
 
+import Footer from '@components/Footer/Footer';
+import Layout from '@components/Layout/Layout';
 import { styled } from 'styled-components';
 
 const FeedContainer = ({ children }) => {
-  return <Container>{children}</Container>;
+  return (
+    <Layout>
+      <Container>{children}</Container>
+      <Footer />
+    </Layout>
+  );
 };
 
 const Container = styled.div``;

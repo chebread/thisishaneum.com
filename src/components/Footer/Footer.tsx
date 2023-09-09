@@ -1,22 +1,19 @@
 'use client';
 
-import Layout from '@components/Layout';
 import themedPalette from '@styles/themes/themedPalette';
 import Link from 'next/link';
 import { styled } from 'styled-components';
 
 const Footer = () => {
   return (
-    <Layout>
-      <Container>
-        <Text>
-          Written by{' '}
-          <Redirect href="https://github.com/chebread" target="_self">
-            Cha Haneum
-          </Redirect>
-        </Text>
-      </Container>
-    </Layout>
+    <Container>
+      <Text>
+        Written by{' '}
+        <Redirect href="https://github.com/chebread" target="_self">
+          Cha Haneum
+        </Redirect>
+      </Text>
+    </Container>
   );
 };
 

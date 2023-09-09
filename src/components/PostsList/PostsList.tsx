@@ -1,6 +1,5 @@
 'use client';
 
-import Layout from '@components/Layout';
 import dateToString from '@lib/dateToString';
 import themedPalette from '@styles/themes/themedPalette';
 import Link from 'next/link';
@@ -8,50 +7,48 @@ import { styled } from 'styled-components';
 
 const PostsList = ({ pinnedPosts, posts }) => {
   return (
-    <Layout>
-      <Container>
-        {pinnedPosts.slice(0).map((post: any) => {
-          return (
-            <PostContainer key={`${post.slug}`}>
-              <PostTitle>
-                <PostLink href={`/${post.slug}`}>{post.title}</PostLink>
-              </PostTitle>
-              <PostDate>
-                <PostTime dateTime={dateToString(new Date(post.date))}>
-                  {dateToString(new Date(post.date))}
-                </PostTime>
-              </PostDate>
-              <PostDescription>{post.description || ''}</PostDescription>
-              <PostReadMore>
-                <PostReadMoreLink href={`/${post.slug}`}>
-                  더 읽어보기
-                </PostReadMoreLink>
-              </PostReadMore>
-            </PostContainer>
-          );
-        })}
-        {posts.slice(0).map((post: any) => {
-          return (
-            <PostContainer key={`${post.slug}`}>
-              <PostTitle>
-                <PostLink href={`/${post.slug}`}>{post.title}</PostLink>
-              </PostTitle>
-              <PostDate>
-                <PostTime dateTime={dateToString(new Date(post.date))}>
-                  {dateToString(new Date(post.date))}
-                </PostTime>
-              </PostDate>
-              <PostDescription>{post.description || ''}</PostDescription>
-              <PostReadMore>
-                <PostReadMoreLink href={`/${post.slug}`}>
-                  더 읽어보기
-                </PostReadMoreLink>
-              </PostReadMore>
-            </PostContainer>
-          );
-        })}
-      </Container>
-    </Layout>
+    <Container>
+      {pinnedPosts.slice(0).map((post: any) => {
+        return (
+          <PostContainer key={`${post.slug}`}>
+            <PostTitle>
+              <PostLink href={`/${post.slug}`}>{post.title}</PostLink>
+            </PostTitle>
+            <PostDate>
+              <PostTime dateTime={dateToString(new Date(post.date))}>
+                {dateToString(new Date(post.date))}
+              </PostTime>
+            </PostDate>
+            <PostDescription>{post.description || ''}</PostDescription>
+            <PostReadMore>
+              <PostReadMoreLink href={`/${post.slug}`}>
+                더 읽어보기
+              </PostReadMoreLink>
+            </PostReadMore>
+          </PostContainer>
+        );
+      })}
+      {posts.slice(0).map((post: any) => {
+        return (
+          <PostContainer key={`${post.slug}`}>
+            <PostTitle>
+              <PostLink href={`/${post.slug}`}>{post.title}</PostLink>
+            </PostTitle>
+            <PostDate>
+              <PostTime dateTime={dateToString(new Date(post.date))}>
+                {dateToString(new Date(post.date))}
+              </PostTime>
+            </PostDate>
+            <PostDescription>{post.description || ''}</PostDescription>
+            <PostReadMore>
+              <PostReadMoreLink href={`/${post.slug}`}>
+                더 읽어보기
+              </PostReadMoreLink>
+            </PostReadMore>
+          </PostContainer>
+        );
+      })}
+    </Container>
   );
 };
 

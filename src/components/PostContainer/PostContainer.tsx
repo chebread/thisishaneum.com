@@ -2,12 +2,16 @@
 
 import { styled } from 'styled-components';
 import Layout from '@components/Layout';
+import Footer from '@components/Footer/Footer';
 
 export default function PostContainer({ children }) {
   return (
-    <Layout>
-      <Container>{children}</Container>
-    </Layout>
+    <>
+      <Layout>
+        <Container>{children}</Container>
+        <Footer />
+      </Layout>
+    </>
   );
 }
 

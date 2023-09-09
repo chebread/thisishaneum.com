@@ -1,6 +1,5 @@
 'use client';
 
-import Layout from '@components/Layout/Layout';
 import Link from 'next/link';
 import { styled } from 'styled-components';
 import EmailIcon from '@assets/EmailIcon.svg';
@@ -10,25 +9,23 @@ import themedPalette from '@styles/themes/themedPalette';
 
 const FeedHeader = () => {
   return (
-    <Layout>
-      <Container>
-        <Img
-          href="/"
-          style={{
-            backgroundImage: `url(${Profile.src})`,
-          }}
-        />
-        <Title>Cha Haneum</Title>
-        <Links>
-          <LinkBtn href="mailto:chahanm@proton.me" target="_self">
-            <EmailIcon />
-          </LinkBtn>
-          <LinkBtn href="https://github.com/chebread" target="_self">
-            <GitHubIcon />
-          </LinkBtn>
-        </Links>
-      </Container>
-    </Layout>
+    <Container>
+      <Img
+        href="/"
+        style={{
+          backgroundImage: `url(${Profile.src})`,
+        }}
+      />
+      <Title>Cha Haneum</Title>
+      <Links>
+        <LinkBtn href="mailto:chahanm@proton.me" target="_self">
+          <EmailIcon />
+        </LinkBtn>
+        <LinkBtn href="https://github.com/chebread" target="_self">
+          <GitHubIcon />
+        </LinkBtn>
+      </Links>
+    </Container>
   );
 };
 
