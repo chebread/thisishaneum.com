@@ -32,7 +32,6 @@ export function MdxImage({
   return (
     <NextImage
       {...imageProps}
-      priority={true}
       sizes="100vw"
       style={{
         width: widthFromSrc ? widthFromSrc : heightFromSrc ? 'auto' : '100%', // width 설정시 설정된 값이 들어가며, height 만 설정시 auto로 값이 설정됨, 아무 것도 설정되지 않으면 img tag와 똑같이 동작함
