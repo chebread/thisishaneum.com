@@ -27,6 +27,14 @@ export const generateMetadata = async ({
   return {
     title: post?.title,
     description: post?.description,
+    openGraph: {
+      title: post?.title,
+      description: post?.description,
+    },
+    twitter: {
+      title: post?.title,
+      description: post?.description,
+    },
   };
 };
 

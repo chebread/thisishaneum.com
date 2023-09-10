@@ -7,10 +7,9 @@ const nextConfig = {
     appDir: true,
     mdxRs: false,
     legacyBrowsers: false,
-    // optimizeCss: true,
   },
   compiler: {
-    styledComponents: true,
+    styledComponents: true, // (0): Why doesn't it work?
   },
   webpack(config) {
     config.module.rules.push({

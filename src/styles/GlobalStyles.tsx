@@ -44,7 +44,6 @@ const GlobalStyles = createGlobalStyle`
   a {
     -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    outline: none;
   }
 `;
 

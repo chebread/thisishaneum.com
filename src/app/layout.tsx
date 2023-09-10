@@ -39,6 +39,11 @@ export const metadata: Metadata = {
     locale: 'ko_KR',
     type: 'website',
   },
+  twitter: {
+    title: 'Cha Haneum',
+    description: `Cha Haneum's blog.`,
+    card: 'summary_large_image',
+  },
   robots: {
     index: true,
     follow: true,
@@ -46,10 +51,5 @@ export const metadata: Metadata = {
       index: true,
       follow: true,
     },
-  },
-  twitter: {
-    title: 'Cha Haneum',
-    card: 'summary_large_image',
-    creator: '@max_leiter',
   },
 };

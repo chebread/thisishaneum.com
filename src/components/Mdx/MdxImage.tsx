@@ -31,6 +31,7 @@ export function MdxImage({
 
   return (
     <NextImage
+      priority
       {...imageProps}
       sizes="100vw"
       style={{
