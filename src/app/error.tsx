@@ -1,5 +1,8 @@
 'use client';
 
+import themedPalette from '@styles/themes/themedPalette';
+import { styled } from 'styled-components';
+
 export default function ErrorPage({
   error,
   reset,
@@ -8,10 +11,14 @@ export default function ErrorPage({
   reset: () => void;
 }) {
   return (
-    <article>
+    <Container>
       <h1>Something went wrong</h1>
       <button onClick={reset}>Try again</button>
       <pre>{error.message}</pre>
-    </article>
+    </Container>
   );
 }
+
+const Container = styled.div`
+  color: ${themedPalette.color};
+`;
