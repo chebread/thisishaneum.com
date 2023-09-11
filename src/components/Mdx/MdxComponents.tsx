@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Code } from 'bright';
 import darkCustomTheme from '../darkCustomTheme.json';
 import lightCustomTheme from '../lightCustomTheme.json';
-import { MdxImage } from './MdxImage';
+import MdxImage from './MdxImage';
 
 Code.theme = {
   light: lightCustomTheme,
@@ -19,6 +19,7 @@ const MdxComponents = {
   },
   img: MdxImage as any,
   Image: MdxImage as any,
+
   pre: ({ children, ...props }) => {
     return (
       <>

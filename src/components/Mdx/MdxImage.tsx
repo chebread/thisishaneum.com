@@ -1,6 +1,6 @@
 import NextImage from 'next/image';
 
-export function MdxImage({
+export default function MdxImage({
   src,
   alt,
 }: React.DetailedHTMLProps<
