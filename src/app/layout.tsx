@@ -26,7 +26,8 @@ export const metadata: Metadata = {
     default: 'Cha Haneum',
   },
   description: `Cha Haneum's blog.`,
-  keywords: 'cha haneum, front-end developer, web developer',
+  keywords:
+    '차한음, 프론트엔드 개발자, 웹 개발자, cha haneum, frontend developer, web developer',
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#fff' },
     { media: '(prefers-color-scheme: dark)', color: '#000' },

@@ -2,10 +2,11 @@
 
 import Link from 'next/link';
 import { styled } from 'styled-components';
+import themedPalette from '@styles/themes/themedPalette';
+import Profile from '@assets/profile.jpg';
 import EmailIcon from '@assets/EmailIcon.svg';
 import GitHubIcon from '@assets/GitHubIcon.svg';
-import Profile from '@assets/profile.jpg';
-import themedPalette from '@styles/themes/themedPalette';
+import VelogIcon from '@assets/VelogIcon.svg';
 
 const FeedHeader = () => {
   return (
@@ -23,6 +24,9 @@ const FeedHeader = () => {
         </LinkBtn>
         <LinkBtn href="https://github.com/chebread" target="_self">
           <GitHubIcon />
+        </LinkBtn>
+        <LinkBtn href="https://velog.io/@haneum" target="_self">
+          <VelogIcon />
         </LinkBtn>
       </Links>
     </Container>
