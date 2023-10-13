@@ -4,12 +4,10 @@ const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'mdx'],
   experimental: {
-    appDir: true,
     mdxRs: false,
-    legacyBrowsers: false,
   },
   compiler: {
-    styledComponents: true, // (0): Why doesn't it work?
+    styledComponents: true,
   },
   webpack(config) {
     config.module.rules.push({

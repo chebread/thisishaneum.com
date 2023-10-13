@@ -1,16 +1,13 @@
 'use client';
 
-import { createGlobalStyle, css } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import appCssVars from './cssVars/appCssVars';
 import appThemes from './themes/appThemes';
 import { normalize } from 'styled-normalize';
 import themedPalette from './themes/themedPalette';
 
-const styles = css``;
-
 const GlobalStyles = createGlobalStyle`
   ${normalize}
-  ${styles}
   body {
     ${appCssVars.all}
     ${appCssVars.mobile}
@@ -34,6 +31,14 @@ const GlobalStyles = createGlobalStyle`
     position: relative;
     height: 100%;
     background-color: ${themedPalette.background_color};
+    @media (prefers-color-scheme: dark) {
+      @media (min-width: 639.9px) {
+        background-color: ${themedPalette.background_color};
+      }
+      @media (max-width: 639.9px) {
+        background-color: #000000;
+      }
+    }
   }
 
   // disable tab highlight
