@@ -12,7 +12,6 @@ export default function PostBody({ children }) {
 const Container = styled.article`
   margin-top: 2rem;
   background-color: inherit;
-
   // Set code block light / dark theme
   [data-theme='light'] {
     display: block;
