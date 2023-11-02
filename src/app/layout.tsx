@@ -1,5 +1,5 @@
 import StyledComponentsRegistry from '@lib/registry';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import GlobalStyles from '@styles/GlobalStyles';
 
 export default function RootLayout({
@@ -19,6 +19,12 @@ export default function RootLayout({
   );
 }
 
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#fff' },
+    { media: '(prefers-color-scheme: dark)', color: '#000' },
+  ],
+};
 export const metadata: Metadata = {
   metadataBase: new URL('https://thisishaneum.com'),
   title: {
@@ -28,10 +34,7 @@ export const metadata: Metadata = {
   description: `Cha Haneum's blog.`,
   keywords:
     '차한음, 프론트엔드 개발자, 웹 개발자, cha haneum, frontend developer, web developer',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#fff' },
-    { media: '(prefers-color-scheme: dark)', color: '#000' },
-  ],
+
   openGraph: {
     title: 'Cha Haneum',
     description: `Cha Haneum's blog.`,
