@@ -3542,10 +3542,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"github-markdown-css@npm:^5.3.0":
-  version: 5.3.0
-  resolution: "github-markdown-css@npm:5.3.0"
-  checksum: 368a7c26b94312d7aab811b1c17ab036a5c7fb0c641710a6f0912d6ade86568d0d8c9170d55d10080f0e63134c98d57e92547cc82eff5541ee53dc6580207b98
+"github-markdown-css@npm:^5.4.0":
+  version: 5.4.0
+  resolution: "github-markdown-css@npm:5.4.0"
+  checksum: 04579c9a12a5f96e1479c852f08518bb4c4c203c4be1fdef776c5fc3379f0bddce19eb15a1eb5e986a54bdd93a1cc0b956bf6c968488930c8e19482a98d3ada7
   languageName: node
   linkType: hard
 
@@ -5956,7 +5956,7 @@ __metadata:
     bright: ^0.8.4
     eslint: ^8.51.0
     eslint-config-next: ^14.0.1
-    github-markdown-css: ^5.3.0
+    github-markdown-css: ^5.4.0
     gray-matter: ^4.0.3
     next: ^14.0.1
     next-mdx-remote: ^4.4.1
