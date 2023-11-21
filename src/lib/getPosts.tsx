@@ -24,6 +24,8 @@ const getPosts = cache(async () => {
         const slug: string = file.substring(0, file.indexOf('.')); // file name is blog's slug
         const date = await getLastModifiedDate(filePath);
 
+        console.log(date);
+
         return {
           ...data,
           body: content,
