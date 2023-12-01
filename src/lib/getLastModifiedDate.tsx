@@ -4,6 +4,8 @@ import fs from 'fs/promises';
 
 function getLastModifiedDate(filepath: string) {
   const mtime = fs.stat(filepath).then(data => {
+    console.log(data);
+
     return data.mtime;
   });
 

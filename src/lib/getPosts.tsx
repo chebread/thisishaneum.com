@@ -22,13 +22,13 @@ const getPosts = cache(async () => {
         }
 
         const slug: string = file.substring(0, file.indexOf('.')); // file name is blog's slug
-        // const date = await getLastModifiedDate(filePath);
+        const date = await getLastModifiedDate(filePath);
 
         return {
           ...data,
           body: content,
           slug: slug,
-          // date: date, // 마지막 수정 일자를 순서로 블로그를 정렬함
+          date: date, // 마지막 수정 일자를 순서로 블로그를 정렬함
         };
       })
   );
