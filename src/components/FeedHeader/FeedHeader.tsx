@@ -7,7 +7,7 @@ import Image from 'assets/mountain.jpg';
 import EmailIcon from 'assets/EmailIcon.svg';
 import GitHubIcon from 'assets/GitHubIcon.svg';
 import VelogIcon from 'assets/VelogIcon.svg';
-import LinkedInIcon from 'assets/LinkedinIcon.svg';
+// import LinkedInIcon from 'assets/LinkedinIcon.svg';
 
 const FeedHeader = () => {
   return (
@@ -26,9 +26,9 @@ const FeedHeader = () => {
         <LinkBtn href="https://github.com/chebread" target="_self">
           <GitHubIcon />
         </LinkBtn>
-        <LinkBtn href="https://www.linkedin.com/in/chebread/" target="_self">
+        {/* <LinkBtn href="https://www.linkedin.com/in/chebread/" target="_self">
           <LinkedInIcon />
-        </LinkBtn>
+        </LinkBtn> */}
         <LinkBtn href="https://velog.io/@haneum" target="_self">
           <VelogIcon />
         </LinkBtn>
