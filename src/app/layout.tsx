@@ -1,6 +1,6 @@
-import StyledComponentsRegistry from '@lib/registry';
+import StyledComponentsRegistry from 'lib/registry';
 import type { Metadata, Viewport } from 'next';
-import GlobalStyles from '@styles/GlobalStyles';
+import GlobalStyles from 'styles/GlobalStyles';
 
 export default function RootLayout({
   children,

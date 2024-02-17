@@ -1,6 +1,6 @@
 'use client';
 
-import themedPalette from '@styles/themes/themedPalette';
+import themedPalette from 'styles/themes/themedPalette';
 import { styled } from 'styled-components';
 
 export default function ErrorPage({

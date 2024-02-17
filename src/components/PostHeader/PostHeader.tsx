@@ -1,7 +1,7 @@
 'use client';
 
-import dateToString from '@lib/dateToString';
-import themedPalette from '@styles/themes/themedPalette';
+import dateToString from 'lib/dateToString';
+import themedPalette from 'styles/themes/themedPalette';
 import { styled } from 'styled-components';
 
 export default function PostHeader({ title, date }) {

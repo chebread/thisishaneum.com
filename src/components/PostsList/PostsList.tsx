@@ -1,7 +1,7 @@
 'use client';
 
-import dateToString from '@lib/dateToString';
-import themedPalette from '@styles/themes/themedPalette';
+import dateToString from 'lib/dateToString';
+import themedPalette from 'styles/themes/themedPalette';
 import Link from 'next/link';
 import { styled } from 'styled-components';
 
@@ -115,10 +115,10 @@ const PostContainer = styled.div`
   }
 `;
 const Container = styled.div`
-  padding-top: 3rem;
+  /* padding-top: 3rem;
   @media (min-width: 639.9px) {
     padding-top: 4rem;
-  }
+  } */
 `;
 
 export default PostsList;

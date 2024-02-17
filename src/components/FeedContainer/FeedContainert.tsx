@@ -1,7 +1,7 @@
 'use client';
 
-import Footer from '@components/Footer/Footer';
-import Layout from '@components/Layout/Layout';
+import Footer from 'components/Footer/Footer';
+import Layout from 'components/Layout/Layout';
 import { styled } from 'styled-components';
 
 const FeedContainer = ({ children }) => {

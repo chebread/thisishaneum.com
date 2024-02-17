@@ -2,11 +2,11 @@
 
 import Link from 'next/link';
 import { styled } from 'styled-components';
-import themedPalette from '@styles/themes/themedPalette';
-import Profile from '@assets/profile.jpg';
-import EmailIcon from '@assets/EmailIcon.svg';
-import GitHubIcon from '@assets/GitHubIcon.svg';
-import VelogIcon from '@assets/VelogIcon.svg';
+import themedPalette from 'styles/themes/themedPalette';
+import Image from 'assets/mountain.jpg';
+import EmailIcon from 'assets/EmailIcon.svg';
+import GitHubIcon from 'assets/GitHubIcon.svg';
+import VelogIcon from 'assets/VelogIcon.svg';
 
 const FeedHeader = () => {
   return (
@@ -14,7 +14,7 @@ const FeedHeader = () => {
       <Img
         href="/"
         style={{
-          backgroundImage: `url(${Profile.src})`,
+          backgroundImage: `url(${Image.src})`,
         }}
       />
       <Title>Cha Haneum</Title>
@@ -43,10 +43,10 @@ const Img = styled(Link)`
 
   border-radius: 1rem;
 
-  --un-border-opacity: 1;
-  border-color: rgba(255, 255, 255, 1);
+  /* --un-border-opacity: 1;
+  border-color: ${themedPalette.background_color};
   border-width: 4px;
-  border-style: solid;
+  border-style: solid; */
   box-sizing: border-box;
 `;
 const LinkBtn = styled(Link)`
@@ -109,9 +109,9 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  border-color: rgba(209, 213, 219, 0.8);
+  /* border-color: rgba(209, 213, 219, 0.8);
   border-bottom-width: 1px;
-  border-bottom-style: solid;
+  border-bottom-style: solid; */
 `;
 
 export default FeedHeader;

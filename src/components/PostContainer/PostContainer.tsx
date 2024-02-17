@@ -1,8 +1,8 @@
 'use client';
 
 import { styled } from 'styled-components';
-import Layout from '@components/Layout';
-import Footer from '@components/Footer/Footer';
+import Layout from 'components/Layout';
+import Footer from 'components/Footer/Footer';
 
 export default function PostContainer({ children }) {
   return (

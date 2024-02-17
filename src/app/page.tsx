@@ -1,6 +1,6 @@
-import FeedContainer from '@components/FeedContainer';
+import FeedContainer from 'components/FeedContainer';
 import PostsListRSC from '../components/PostsList/PostsListRSC';
-import FeedHeader from '@components/FeedHeader';
+import FeedHeader from 'components/FeedHeader';
 
 const Feed = () => {
   return (
