@@ -7,7 +7,7 @@ import Image from 'assets/mountain.jpg';
 import EmailIcon from 'assets/EmailIcon.svg';
 import GitHubIcon from 'assets/GitHubIcon.svg';
 import VelogIcon from 'assets/VelogIcon.svg';
-import LinkedInIcon from 'assets/LinkedinIcon.svg';
+import LinkedInIcon from 'assets/LinkedInIcon.svg';
 
 const FeedHeader = () => {
   return (
