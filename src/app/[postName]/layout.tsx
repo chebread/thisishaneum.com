@@ -62,10 +62,12 @@ export default async function PostLayout({
   });
 
   return (
-    <PostContainer>
-      <PostNavigation />
-      <PostHeader title={post.title} date={post.date} />
-      <PostBody>{children}</PostBody>
-    </PostContainer>
+    <>
+      <PostContainer>
+        <PostNavigation />
+        <PostHeader title={post.title} date={post.date} />
+        <PostBody>{children}</PostBody>
+      </PostContainer>
+    </>
   );
 }

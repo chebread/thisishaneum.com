@@ -23,7 +23,11 @@ const PostPage = async ({
   if (!post) {
     return notFound();
   }
-  return <MdxViewer>{post?.body}</MdxViewer>;
+  return (
+    <>
+      <MdxViewer>{post?.body}</MdxViewer>
+    </>
+  );
 };
 
 export default PostPage;

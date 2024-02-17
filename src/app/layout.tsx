@@ -1,6 +1,7 @@
 import StyledComponentsRegistry from 'lib/registry';
 import type { Metadata, Viewport } from 'next';
 import GlobalStyles from 'styles/GlobalStyles';
+// import Scroll from './Scroll';
 
 export default function RootLayout({
   children,
@@ -12,6 +13,8 @@ export default function RootLayout({
       <body suppressHydrationWarning>
         <StyledComponentsRegistry>
           <GlobalStyles />
+          {/* https://github.com/vercel/next.js/issues/45187 */}
+          {/* <Scroll /> */}
           {children}
         </StyledComponentsRegistry>
       </body>

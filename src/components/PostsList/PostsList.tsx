@@ -2,7 +2,7 @@
 
 import dateToString from 'lib/dateToString';
 import themedPalette from 'styles/themes/themedPalette';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { styled } from 'styled-components';
 
 const PostsList = ({ pinnedPosts, posts }) => {
@@ -52,7 +52,7 @@ const PostsList = ({ pinnedPosts, posts }) => {
   );
 };
 
-const PostReadMoreLink = styled(Link)`
+const PostReadMoreLink = styled.a`
   transition-property: color, font-size;
   transition-duration: 0.15s;
   transition-timing-function: ease-out;
@@ -92,7 +92,7 @@ const PostDate = styled.p`
   line-height: 1.5rem;
   font-weight: 400;
 `;
-const PostLink = styled(Link)`
+const PostLink = styled.a`
   cursor: pointer;
 
   transition-property: color, color;
