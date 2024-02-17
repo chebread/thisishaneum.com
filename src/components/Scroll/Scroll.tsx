@@ -10,8 +10,6 @@ export default function Scroll() {
 
   const pathname = usePathname();
   useEffect(() => {
-    console.log(1);
-
     window.scroll(0, 0);
   }, [pathname]);
   return <></>;
