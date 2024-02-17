@@ -26,7 +26,7 @@ const FeedHeader = () => {
         <LinkBtn href="https://github.com/chebread" target="_self">
           <GitHubIcon />
         </LinkBtn>
-        <LinkBtn href="https://velog.io/@haneum" target="_self">
+        <LinkBtn href="https://www.linkedin.com/in/chebread/" target="_self">
           <LinkedInIcon />
         </LinkBtn>
         <LinkBtn href="https://velog.io/@haneum" target="_self">
