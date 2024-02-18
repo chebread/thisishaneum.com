@@ -6,7 +6,7 @@ import appThemes from './themes/appThemes';
 import { normalize } from 'styled-normalize';
 import themedPalette from './themes/themedPalette';
 
-const GlobalStyles = createGlobalStyle`
+const PostGlobalStyles = createGlobalStyle`
   ${normalize}
   body {
     ${appCssVars.all}
@@ -30,7 +30,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     position: relative;
     height: 100%;
-    /* background-color: ${themedPalette.background_color};
+    background-color: ${themedPalette.background_color};
     color: ${themedPalette.color};
     @media (prefers-color-scheme: dark) {
       @media (min-width: 639.9px) {
@@ -39,7 +39,7 @@ const GlobalStyles = createGlobalStyle`
       @media (max-width: 639.9px) {
         background-color: #000000;
       }
-    } */
+    }
   }
 
   // disable tab highlight
@@ -53,4 +53,4 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-export default GlobalStyles;
+export default PostGlobalStyles;

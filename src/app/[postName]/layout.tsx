@@ -4,6 +4,7 @@ import PostHeader from 'components/PostHeader';
 import PostNavigation from 'components/PostNavigation';
 import getPosts from 'lib/getPosts';
 import { Metadata } from 'next';
+import PostGlobalStyles from 'styles/PostGlobalStyles';
 
 export async function generateStaticParams() {
   const posts = await getPosts();
@@ -63,6 +64,7 @@ export default async function PostLayout({
 
   return (
     <>
+      <PostGlobalStyles />
       <PostContainer>
         <PostNavigation />
         <PostHeader title={post.title} date={post.date} />

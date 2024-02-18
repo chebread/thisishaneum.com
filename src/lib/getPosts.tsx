@@ -5,7 +5,20 @@ import { cache } from 'react';
 // import getAllFiles from './getAllFiles';
 // import getLastModifiedDate from './getLastModifiedDate'; // Vercel 서버 사용하므로 이는 불가능한 기능임
 
-const getPosts = cache(async () => {
+const thirdPartyPosts: any = [
+  {
+    title: '차한음 포트폴리오',
+    description: '안녕하세요. 프론트엔드 개발자 차한음입니다.',
+    body: '',
+    date: '',
+    pinned: true,
+    lastModified: 0,
+    isThirdParty: true,
+    href: 'portfolio',
+  },
+];
+
+const getPosts = cache(async (includeThirdPartyPosts?: boolean) => {
   const posts = await fs.readdir(path.join(process.cwd(), './posts')); // await fs.readdir('./posts/');
   // const posts = getAllFiles('./posts');
 
@@ -41,13 +54,18 @@ const getPosts = cache(async () => {
       })
   );
 
-  const filteredPosts = postsWithMetadata
+  const postsWithMetadataAndThirdPartyPosts = [
+    ...postsWithMetadata,
+    ...(includeThirdPartyPosts ? thirdPartyPosts : []),
+  ];
+
+  const filtered = postsWithMetadataAndThirdPartyPosts
     .filter(post => post !== null)
     .sort((a: any, b: any) =>
       a && b ? new Date(b.date).getTime() - new Date(a.date).getTime() : 0
     );
 
-  return filteredPosts;
+  return filtered;
 });
 
 export default getPosts;

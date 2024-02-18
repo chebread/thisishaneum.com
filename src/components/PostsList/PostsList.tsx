@@ -12,7 +12,9 @@ const PostsList = ({ pinnedPosts, posts }) => {
         return (
           <PostContainer key={`${post.slug}`}>
             <PostTitle>
-              <PostLink href={`/${post.slug}`}>{post.title}</PostLink>
+              <PostLink href={post.isThirdParty ? post.href! : `/${post.slug}`}>
+                {post.title}
+              </PostLink>
             </PostTitle>
             <PostDate>
               <PostTime dateTime={dateToString(new Date(post.date))}>
@@ -21,18 +23,23 @@ const PostsList = ({ pinnedPosts, posts }) => {
             </PostDate>
             <PostDescription>{post.description || ''}</PostDescription>
             <PostReadMore>
-              <PostReadMoreLink href={`/${post.slug}`}>
+              <PostReadMoreLink
+                href={post.isThirdParty ? post.href! : `/${post.slug}`}
+              >
                 더 읽어보기
               </PostReadMoreLink>
             </PostReadMore>
           </PostContainer>
         );
       })}
+
       {posts.slice(0).map((post: any) => {
         return (
           <PostContainer key={`${post.slug}`}>
             <PostTitle>
-              <PostLink href={`/${post.slug}`}>{post.title}</PostLink>
+              <PostLink href={post.isThirdParty ? post.href! : `/${post.slug}`}>
+                {post.title}
+              </PostLink>
             </PostTitle>
             <PostDate>
               <PostTime dateTime={dateToString(new Date(post.date))}>
@@ -41,7 +48,9 @@ const PostsList = ({ pinnedPosts, posts }) => {
             </PostDate>
             <PostDescription>{post.description || ''}</PostDescription>
             <PostReadMore>
-              <PostReadMoreLink href={`/${post.slug}`}>
+              <PostReadMoreLink
+                href={post.isThirdParty ? post.href! : `/${post.slug}`}
+              >
                 더 읽어보기
               </PostReadMoreLink>
             </PostReadMore>
