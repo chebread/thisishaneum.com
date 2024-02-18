@@ -6,7 +6,7 @@ import appThemes from './themes/appThemes';
 import { normalize } from 'styled-normalize';
 import themedPalette from './themes/themedPalette';
 
-const PostGlobalStyles = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   ${normalize}
   body {
     ${appCssVars.all}
@@ -53,4 +53,4 @@ const PostGlobalStyles = createGlobalStyle`
   }
 `;
 
-export default PostGlobalStyles;
+export default GlobalStyle;

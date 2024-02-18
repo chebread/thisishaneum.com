@@ -1,6 +1,6 @@
 import StyledComponentsRegistry from 'lib/registry';
 import type { Metadata, Viewport } from 'next';
-import GlobalStyles from 'styles/GlobalStyles';
+import GlobalStyle from 'styles/GlobalStyle';
 import Scroll from 'components/Scroll';
 
 export default function FeedLayout({
@@ -12,7 +12,7 @@ export default function FeedLayout({
     <html lang="ko">
       <body suppressHydrationWarning>
         <StyledComponentsRegistry>
-          {/* <GlobalStyles /> */} {/* portfolio page 추가로 인해 삭제함 */}
+          <GlobalStyle />
           {/* https://github.com/vercel/next.js/issues/45187 */}
           <Scroll />
           {children}
