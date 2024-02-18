@@ -31,7 +31,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://thisishaneum.com'),
   title: {
-    template: '%s - Cha Haneum',
+    template: '%s | Cha Haneum',
     default: 'Cha Haneum',
   },
   description: `Cha Haneum의 블로그.`,
