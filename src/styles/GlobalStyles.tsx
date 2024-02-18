@@ -27,9 +27,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Spoqa Han Sans Neo", "Helvetica Neue", sans-serif;
     position: relative;
     height: 100%;
+    color: rgb(25, 26, 32);
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
     /* background-color: ${themedPalette.background_color};
     color: ${themedPalette.color};
     @media (prefers-color-scheme: dark) {
