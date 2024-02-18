@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { styled } from 'styled-components';
 import themedPalette from 'styles/themes/themedPalette';
-import Image from 'assets/yisang_3.jpg';
+import Image from 'assets/yisang.jpg';
 import EmailIcon from 'assets/EmailIcon.svg';
 import GitHubIcon from 'assets/GitHubIcon.svg';
 import VelogIcon from 'assets/VelogIcon.svg';
