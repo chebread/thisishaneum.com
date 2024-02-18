@@ -9,6 +9,9 @@ import GitHubIcon from 'assets/GitHubIcon.svg';
 import VelogIcon from 'assets/VelogIcon.svg';
 import LinkedInIcon from 'assets/LinkedInIcon.svg';
 
+// (0): Blur layor 만들기, 헤더 제구성하기, 포트폴리오 사이트 만들기 (portfolio), chebread.github.io로 일단 한번 배포해보기
+// (0): next.js 설정뭐 더 할꺼 있나 확인하기
+
 const FeedHeader = () => {
   return (
     <Container>
