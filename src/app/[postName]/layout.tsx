@@ -2,7 +2,6 @@ import PostBody from 'components/PostBody';
 import PostContainer from 'components/PostContainer';
 import PostHeader from 'components/PostHeader';
 import PostNavigation from 'components/PostNavigation';
-import BlurLayer from 'components/blur-layer';
 import getPosts from 'lib/getPosts';
 import { Metadata } from 'next';
 
@@ -64,7 +63,6 @@ export default async function PostLayout({
 
   return (
     <>
-      <BlurLayer />
       <PostContainer>
         <PostNavigation />
         <PostHeader title={post.title} date={post.date} />
