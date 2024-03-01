@@ -16,5 +16,5 @@ export default function PostContainer({ children }) {
 }
 
 const Container = styled.div`
-  margin-top: 2rem;
+  margin-top: 4rem;
 `;

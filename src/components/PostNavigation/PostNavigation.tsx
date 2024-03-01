@@ -21,7 +21,7 @@ const RedirectBtn = styled(Link)`
   cursor: pointer;
 
   display: inline-flex;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 
   @media (min-width: 639.9px) {
     // desktop

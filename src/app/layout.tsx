@@ -1,7 +1,6 @@
 import StyledComponentsRegistry from 'lib/registry';
 import type { Metadata, Viewport } from 'next';
-import Scroll from 'components/Scroll';
-import BlurLayer from 'components/blur-layer';
+import Scroll from 'components/scroll';
 
 export default function FeedLayout({
   children,
@@ -11,11 +10,8 @@ export default function FeedLayout({
   return (
     <html lang="ko">
       <body suppressHydrationWarning>
-        <StyledComponentsRegistry>
-          <Scroll /> {/* https://github.com/vercel/next.js/issues/45187 */}
-          {/* <BlurLayer></BlurLayer> */}
-          {children}
-        </StyledComponentsRegistry>
+        <Scroll /> {/* https://github.com/vercel/next.js/issues/45187 */}
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>
   );
