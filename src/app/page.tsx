@@ -9,6 +9,7 @@ import BlurLayer from 'components/blur-layer';
 const Feed = () => {
   return (
     <>
+      <BlurLayer />
       <FeedContainer>
         <FeedHeader />
         <PostsListRSC />
