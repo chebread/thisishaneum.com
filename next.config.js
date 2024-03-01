@@ -5,6 +5,7 @@ const nextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'mdx'],
   experimental: {
     mdxRs: false,
+    webpackBuildWorker: true,
   },
   compiler: {
     styledComponents: true,
