@@ -49,11 +49,11 @@ const Img = styled(Link)`
   background-size: cover;
 
   border-radius: 1rem;
+  box-shadow: 0 10.5px 21px rgba(0, 0, 0, 0.08);
+  @media (prefers-color-scheme: dark) {
+    box-shadow: 0 10.5px 21px rgba(255, 255, 255, 0.08);
+  }
 
-  /* --un-border-opacity: 1;
-  border-color: ${themedPalette.background_color};
-  border-width: 4px;
-  border-style: solid; */
   box-sizing: border-box;
 `;
 const LinkBtn = styled(Link)`

@@ -1,13 +1,37 @@
 ---
-title: # 중심 내용
-description: # 간략한 내용 (없어도 상관 없음)
+title: 글 예시 # 중심 내용
+date: 2008-03-20 # 날짜 (yyyy-mm-dd)
+description: 글 예시 # 간략한 내용 (없어도 상관 없음)
 published: false # boolean (없어도 상관 없음)
 pinned: false # boolean (없어도 상관 없음)
-comment: # 주석 (없어도 상관 없음)
+comment: 글 예시 # 주석 (없어도 상관 없음)
 ---
 
-# ...
+## img
 
-# ![alt](src?width=500&height=100) or <Image src="" alt=""> (MDX를 사용하여)
+> By using MDX
 
-# <img src="" alt=""> (MDX를 사용하지 않고서)
+```js
+![alt](/blog/photo.jpg?width=500&height=500)
+```
+
+```js
+<Image src="/blog/photo.jpg?width=500&height=500" alt="" />
+```
+
+> By not using MDX
+
+```js
+<img src="/blog/photo.jpg" alt="" width="500" height="500" />
+```
+
+## details/summary
+
+```html
+<details open>
+  <summary>더보기</summary>
+  <ul>
+    <li></li>
+  </ul>
+</details>
+```

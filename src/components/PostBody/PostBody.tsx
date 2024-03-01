@@ -19,6 +19,9 @@ const Container = styled.article`
   [data-theme='dark'] {
     display: none;
   }
+  /* .post-image {
+    box-shadow: 0 10.5px 21px rgba(0, 0, 0, 0.08);
+  } */
   @media (prefers-color-scheme: dark) {
     [data-theme='light'] {
       display: none;
@@ -26,5 +29,8 @@ const Container = styled.article`
     [data-theme='dark'] {
       display: block;
     }
+    /* .post-image {
+      box-shadow: 0 10.5px 21px rgba(255, 255, 255, 0.08);
+    } */
   }
 `;

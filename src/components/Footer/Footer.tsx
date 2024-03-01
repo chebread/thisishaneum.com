@@ -5,12 +5,27 @@ import Link from 'next/link';
 import { styled } from 'styled-components';
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <Container>
-      <Text>
+      {/* <Text>
         Written by{' '}
         <Redirect href="https://github.com/chebread" target="_self">
           Cha Haneum
+        </Redirect>
+      </Text> */}
+      <Text>
+        © {year} by{' '}
+        <Redirect href="https://github.com/chebread" target="_self">
+          Cha Haneum
+        </Redirect>{' '}
+        is licensed under{' '}
+        <Redirect
+          href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1"
+          target="_self"
+        >
+          CC BY 4.0
         </Redirect>
       </Text>
     </Container>
