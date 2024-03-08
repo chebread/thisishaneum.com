@@ -6,16 +6,16 @@ import { cache } from 'react';
 // import getLastModifiedDate from './getLastModifiedDate'; // Vercel 서버 사용하므로 이는 불가능한 기능임
 
 const thirdPartyPosts: any = [
-  // {
-  //   title: '차한음 포트폴리오',
-  //   description: '안녕하세요. 프론트엔드 개발자 차한음입니다.',
-  //   body: '',
-  //   date: '',
-  //   pinned: true,
-  //   lastModified: 0,
-  //   isThirdParty: true,
-  //   href: 'https://thisishaneum.com/portfolio',
-  // },
+  {
+    title: '차한음 이력서',
+    description: '안녕하세요. 프론트엔드 개발자 차한음입니다.',
+    body: '',
+    date: '',
+    pinned: true,
+    lastModified: 0,
+    isThirdParty: true,
+    href: 'resume',
+  },
 ];
 
 const getPosts = cache(async (includeThirdPartyPosts?: boolean) => {
