@@ -3,11 +3,11 @@
 import Link from 'next/link';
 import { styled } from 'styled-components';
 import themedPalette from 'styles/themes/themed-palette';
-import Image from 'assets/photo.jpg';
-import EmailIcon from 'assets/EmailIcon.svg';
-import GitHubIcon from 'assets/GitHubIcon.svg';
-import VelogIcon from 'assets/VelogIcon.svg';
-import LinkedInIcon from 'assets/LinkedInIcon.svg';
+import PhotoImage from 'assets/images/photo.jpg';
+import EmailSvg from 'assets/svg/email.svg';
+import GitHubSvg from 'assets/svg/github.svg';
+import VelogSvg from 'assets/svg/velog.svg';
+import LinkedInSvg from 'assets/svg/linked-in.svg';
 
 // (0): Blur layor 만들기, 헤더 제구성하기, 포트폴리오 사이트 만들기 (portfolio), chebread.github.io로 일단 한번 배포해보기
 // (0): next.js 설정뭐 더 할꺼 있나 확인하기
@@ -18,22 +18,22 @@ const FeedHeader = () => {
       <Img
         href="/"
         style={{
-          backgroundImage: `url(${Image.src})`,
+          backgroundImage: `url(${PhotoImage.src})`,
         }}
       />
       <Title>Cha Haneum</Title>
       <Links>
         <LinkBtn href="mailto:chahanm@proton.me" target="_self">
-          <EmailIcon />
+          <EmailSvg />
         </LinkBtn>
         <LinkBtn href="https://github.com/chebread" target="_self">
-          <GitHubIcon />
+          <GitHubSvg />
         </LinkBtn>
         <LinkBtn href="https://www.linkedin.com/in/chebread/" target="_self">
-          <LinkedInIcon />
+          <LinkedInSvg />
         </LinkBtn>
         <LinkBtn href="https://velog.io/@haneum" target="_self">
-          <VelogIcon />
+          <VelogSvg />
         </LinkBtn>
       </Links>
     </Container>

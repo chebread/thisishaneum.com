@@ -2,14 +2,14 @@
 
 import Link from 'next/link';
 import { styled } from 'styled-components';
-import BackIcon from 'assets/BackIcon.svg';
+import BackSvg from 'assets/svg/back.svg';
 import themedPalette from 'styles/themes/themed-palette';
 
 export default function PostNavigation() {
   return (
     <Container>
       <RedirectBtn href="/">
-        <BackIcon />
+        <BackSvg />
       </RedirectBtn>
     </Container>
   );

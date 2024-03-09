@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Code } from 'bright';
-import darkCustomTheme from './darkCustomTheme.json';
-import lightCustomTheme from './lightCustomTheme.json';
+import darkCustomTheme from './dark-bright-theme.json';
+import lightCustomTheme from './light-bright-theme.json';
 import MdxImage from './mdx-image';
 
 Code.theme = {
