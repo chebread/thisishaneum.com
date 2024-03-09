@@ -2,9 +2,9 @@
 
 import { createGlobalStyle } from 'styled-components';
 import appCssVars from './cssVars/appCssVars';
-import appThemes from './themes/app-themes';
+import appThemes from 'styles/themes/app-themes';
 import { normalize } from 'styled-normalize';
-import themedPalette from './themes/themed-palette';
+import themedPalette from 'styles/themes/themed-palette';
 
 const GlobalStyle = createGlobalStyle`
   ${normalize}

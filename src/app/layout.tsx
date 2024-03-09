@@ -1,6 +1,6 @@
-import StyledComponentsRegistry from '../lib/registry';
+import StyledComponentsRegistry from 'lib/registry';
 import type { Metadata, Viewport } from 'next';
-import Scroll from '../components/scroll';
+import Scroll from 'components/scroll';
 
 export default function FeedLayout({
   children,
