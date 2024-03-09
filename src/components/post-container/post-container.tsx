@@ -1,8 +1,8 @@
 'use client';
 
 import { styled } from 'styled-components';
-import BlogLayout from '../blog-layout';
-import Footer from '../footer/footer';
+import BlogLayout from 'components/blog-layout';
+import Footer from 'components/footer';
 
 export default function PostContainer({ children }) {
   return (
