@@ -1,10 +1,10 @@
 import { promises as fs } from 'fs';
-import IntroduceCard from '../../components/cards/introduce-card';
-import ContactCard from '../../components/cards/contact-card';
-import SkillCard from '../../components/cards/skill-card';
-import ProjectCard from '../../components/cards/project-card';
-import AwardCard from '../../components/cards/award-card';
-import EducationCard from '../../components/cards/education-card';
+import IntroduceCard from 'components/cards/introduce-card';
+import ContactCard from 'components/cards/contact-card';
+import SkillCard from 'components/cards/skill-card';
+import ProjectCard from 'components/cards/project-card';
+import AwardCard from 'components/cards/award-card';
+import EducationCard from 'components/cards/education-card';
 
 type HomeProps = {
   introduces: string[];

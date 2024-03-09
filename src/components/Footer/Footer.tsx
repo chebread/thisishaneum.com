@@ -1,6 +1,6 @@
 'use client';
 
-import themedPalette from '../../styles/themes/themed-palette';
+import themedPalette from 'styles/themes/themed-palette';
 import Link from 'next/link';
 import { styled } from 'styled-components';
 

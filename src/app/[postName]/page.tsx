@@ -1,6 +1,6 @@
-import getPost from '../../lib/get-post';
-import getPosts from '../../lib/get-posts';
-import MDXViewer from '../../components/mdx/mdx-viewer';
+import getPost from 'lib/get-post';
+import getPosts from 'lib/get-posts';
+import MDXViewer from 'components/mdx/mdx-viewer';
 import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {

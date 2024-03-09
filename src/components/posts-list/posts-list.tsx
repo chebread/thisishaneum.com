@@ -1,7 +1,7 @@
 'use client';
 
-import dateToString from '../../lib/dateToString';
-import themedPalette from '../../styles/themes/themed-palette';
+import dateToString from 'lib/dateToString';
+import themedPalette from 'styles/themes/themed-palette';
 import Link from 'next/link';
 import { styled } from 'styled-components';
 

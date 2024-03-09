@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { styled } from 'styled-components';
-import themedPalette from '../../styles/themes/themed-palette';
+import themedPalette from 'styles/themes/themed-palette';
 import Image from 'assets/photo.jpg';
 import EmailIcon from 'assets/EmailIcon.svg';
 import GitHubIcon from 'assets/GitHubIcon.svg';

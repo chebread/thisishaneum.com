@@ -1,5 +1,5 @@
-import PostsList from '.';
-import getPosts from '../../lib/get-posts';
+import PostsList from './posts-list';
+import getPosts from 'lib/get-posts';
 
 export default async function PostsListRSC() {
   const posts = await getPosts(true);

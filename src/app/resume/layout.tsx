@@ -1,7 +1,7 @@
-import PostBody from '../../components/post-body';
-import PostContainer from '../../components/post-container';
-import PostHeader from '../../components/post-header';
-import PostNavigation from '../../components/post-navigation';
+import PostBody from 'components/post-body';
+import PostContainer from 'components/post-container';
+import PostHeader from 'components/post-header';
+import PostNavigation from 'components/post-navigation';
 
 export const metadata = {
   title: '차한음 이력서',

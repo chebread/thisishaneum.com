@@ -1,8 +1,8 @@
-import PostBody from '../../components/post-body';
-import PostContainer from '../../components/post-container';
-import PostHeader from '../../components/post-header';
-import PostNavigation from '../../components/post-navigation';
-import getPosts from '../../lib/get-posts';
+import PostBody from 'components/post-body';
+import PostContainer from 'components/post-container';
+import PostHeader from 'components/post-header';
+import PostNavigation from 'components/post-navigation';
+import getPosts from 'lib/get-posts';
 import { Metadata } from 'next';
 
 export async function generateStaticParams() {

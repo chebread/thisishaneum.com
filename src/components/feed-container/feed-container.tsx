@@ -1,6 +1,6 @@
 'use client';
 
-import Footer from '../footer/footer';
+import Footer from '../footer';
 import BlogLayout from '../blog-layout';
 import { styled } from 'styled-components';
 
