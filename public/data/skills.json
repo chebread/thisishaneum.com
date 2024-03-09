@@ -1,0 +1,32 @@
+[
+  {
+    "category": "Language",
+    "details": ["JavaScript", "Python", "C", "Swift"]
+  },
+  {
+    "category": "Markup Language",
+    "details": ["HTML", "CSS"]
+  },
+  {
+    "category": "Framework/Library",
+    "details": [
+      "TypeScript",
+      "React.js / Next.js / Vue.js / Svelte.js",
+      "React Native / React Router (Dom)",
+      "Node.js / Express.js",
+      "Styled components / Tailwind CSS",
+      "GSAP / Framer / React spring",
+      "Recoil / Jotai / IDB"
+    ]
+  },
+  {
+    "category": "Tool",
+    "details": [
+      "Supabase / Firebase",
+      "Vite / Bun / Webpack / Babel",
+      "Mapbox / Naver / Kakao Map API / Open API",
+      "Git / GitHub",
+      "Figma / VS Code / Xcode / Slack"
+    ]
+  }
+]

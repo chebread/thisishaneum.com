@@ -8,7 +8,29 @@ const nextConfig = {
     webpackBuildWorker: true,
   },
   compiler: {
-    styledComponents: true,
+    styledComponents: {
+      // Enabled by default in development, disabled in production to reduce file size,
+      // setting this will override the default for all environments.
+      // displayName?: boolean,
+      // Enabled by default.
+      ssr: true,
+      // Enabled by default.
+      //fileName?: boolean,
+      // Empty by default.
+      //topLevelImportPaths?: string[],
+      // Defaults to ["index"].
+      //meaninglessFileNames?: string[],
+      // Enabled by default.
+      //cssProp?: boolean,
+      // Empty by default.
+      //namespace?: string,
+      // Not supported yet.
+      //minify?: boolean,
+      // Not supported yet.
+      //transpileTemplateLiterals?: boolean,
+      // Not supported yet.
+      //pure?: boolean,
+    },
   },
   webpack(config) {
     config.module.rules.push({
@@ -16,7 +38,6 @@ const nextConfig = {
       issuer: /\.[jt]sx?$/,
       use: ['@svgr/webpack'],
     });
-
     return config;
   },
 };

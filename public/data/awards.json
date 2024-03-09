@@ -1,0 +1,29 @@
+[
+  {
+    "name": "함께(hamkke)",
+    "projectUrl": "https://github.com/chebread/hamkke",
+    "description": "URL을 통한 약속 공유 웹사이트",
+    "detail": "2022년 제4회 한국코드페어 해커톤 동상 수상작",
+    "projectStacks": ["React", "Next.js", "TypeScript", "Sass", "Github"]
+  },
+  {
+    "name": "ft",
+    "projectUrl": "https://github.com/chebread/ft",
+    "description": "찾고자하는 문자열을 통한 파일 검색 CLI",
+    "detail": "2021년 공개SW소프트웨어 개발자대회 특별상 수상작",
+    "projectStacks": ["React", "Next.js", "TypeScript", "Sass", "Github"]
+  },
+  {
+    "name": "treshe",
+    "projectUrl": "https://github.com/chebread/treshe",
+    "description": "플로깅 소셜 미디어 웹사이트",
+    "detail": "2022년 제4회 한국코드페어 아이디어톤 합격작",
+    "projectStacks": ["React", "Next.js", "TypeScript", "Sass", "Github"]
+  },
+  {
+    "name": "후원닷페이지(hoowon.page)",
+    "projectUrl": "https://github.com/chebread/hoowon.page",
+    "description": "개인/단체에게 후원시 수수료가 없는 후원 웹사이트",
+    "detail": "2023년 제5회 한국코드페어 아이디어톤 16위"
+  }
+]

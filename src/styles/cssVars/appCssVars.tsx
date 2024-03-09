@@ -1,4 +1,4 @@
-import buildCssVars from 'lib/buildCssVars';
+import buildCssVars from '../../lib/buildCssVars';
 import cssVars from './cssVars';
 
 const appCssVars = {

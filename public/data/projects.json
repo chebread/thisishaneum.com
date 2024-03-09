@@ -1,0 +1,106 @@
+[
+  {
+    "name": "사진페이지(Sajinpage) (운영중)",
+    "projectUrl": "https://github.com/chebread/sajin.page-v1",
+    "description": "URL을 통한 사진 공유 웹사이트",
+    "projectStacks": ["React", "Next.js", "TypeScript", "Sass", "Github"]
+  },
+  {
+    "name": "thisishaneum.com (운영중)",
+    "projectUrl": "https://github.com/chebread/thisishaneum.com",
+    "description": "개인 블로그",
+    "projectStacks": ["React", "Next.js", "TypeScript", "Sass", "Github"]
+  },
+  {
+    "name": "spothouse.app",
+    "projectUrl": "https://github.com/chebread/spothouse.app"
+  },
+  {
+    "name": "gitits",
+    "projectUrl": "https://github.com/chebread/gatchy"
+  },
+  {
+    "name": "poempoempoem.com",
+    "projectUrl": "https://github.com/chebread/poempoempoem"
+  },
+  {
+    "name": "introducemee.vercel.app",
+    "projectUrl": "https://github.com/chebread/Introduce"
+  },
+  {
+    "name": "watchJs",
+    "projectUrl": "https://github.com/chebread/watchJs"
+  },
+  {
+    "name": "colvier.vercel.app",
+    "projectUrl": "https://github.com/chebread/colvier"
+  },
+  {
+    "name": "md-typewriter.vercel.app",
+    "projectUrl": "https://github.com/chebread/md-typewriter"
+  },
+  {
+    "name": "sajin",
+    "projectUrl": "https://github.com/chebread/sajin"
+  },
+  {
+    "name": "nowPlace",
+    "projectUrl": "https://github.com/chebread/nowPlace"
+  },
+  {
+    "name": "this-is-haneum.vercel.app",
+    "projectUrl": "https://github.com/chebread/this-is-haneum"
+  },
+  {
+    "name": "haneumblog.vercel.app",
+    "projectUrl": "https://github.com/chebread/blogHaneum"
+  },
+  {
+    "name": "haneum-todo-list.vercel.app",
+    "projectUrl": "https://github.com/chebread/todo-list"
+  },
+  {
+    "name": "findText",
+    "projectUrl": "https://github.com/chebread/findText"
+  },
+  {
+    "name": "loadText",
+    "projectUrl": "https://github.com/chebread/loadText"
+  },
+  {
+    "name": "Worker",
+    "projectUrl": "https://github.com/chebread/Worker"
+  },
+  {
+    "name": "watch",
+    "projectUrl": "https://github.com/chebread/watch"
+  },
+  {
+    "name": "watchTime",
+    "projectUrl": "https://github.com/chebread/watchTime"
+  },
+  {
+    "name": "currencyConverter",
+    "projectUrl": "https://github.com/chebread/currencyConverter"
+  },
+  {
+    "name": "listBug",
+    "projectUrl": "https://github.com/chebread/listBug"
+  },
+  {
+    "name": "Board",
+    "projectUrl": "https://github.com/chebread/Board"
+  },
+  {
+    "name": "findingAge",
+    "projectUrl": "https://github.com/chebread/findingAge"
+  },
+  {
+    "name": "dateDifference",
+    "projectUrl": "https://github.com/chebread/dateDifference"
+  },
+  {
+    "name": "leapYear",
+    "projectUrl": "https://github.com/chebread/leapYear"
+  }
+]
