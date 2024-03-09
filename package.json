@@ -8,9 +8,6 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "license": "MIT",
   "dependencies": {
     "bright": "^0.8.4",
