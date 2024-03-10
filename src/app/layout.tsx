@@ -32,11 +32,9 @@ export const metadata: Metadata = {
     template: '%s | Cha Haneum',
     default: 'Cha Haneum',
   },
-
   description: `Cha Haneum의 블로그.`,
   keywords:
     '차한음, 프론트엔드 개발자, 웹 개발자, cha haneum, frontend developer, web developer',
-
   openGraph: {
     title: 'Cha Haneum',
     description: `Cha Haneum의 블로그.`,
